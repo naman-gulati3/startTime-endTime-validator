@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Start and End Time</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <form>
+            Start Time : <input id="startDate" data-provide="datepicker" autocomplete="off" format="dd/mm/yyyy" onchange="startAndEndTimeValidator()"> 
+            End Time : <input id="endDate" data-provide="datepicker" autocomplete="off" format="dd/mm/yyyy" onchange="startAndEndTimeValidator()">
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../js/bootstrap-datepicker.min.js"></script>
+        <script src="../js/bootstrap-datepicker.js"></script>
+        <script src="../js/validator.js"></script>
+    </body>
+</html>
