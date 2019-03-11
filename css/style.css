@@ -1,0 +1,15 @@
+body
+{
+    margin: 10px;
+}
+
+.datepicker-switch
+{
+    pointer-events: none;
+}
+div{
+width:100px;
+}
+input{
+    width:200px;
+}

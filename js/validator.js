@@ -28,15 +28,18 @@ startAndEndTimeValidator.prototype.validateBothStartAndEnd = function () {
     } else if (startinputTime > endInputTime) {
         console.log('wrong input');
     }
-}
-$(document).ready(function () {
-    var $startDate = $('#startDate');
-    var $endDate = $('#endDate');
+}   
+$(document).ready(function(){
+    var $startDate = $('#startDate');  
+    var $endDate = $('#endDate'); 
     $startDate.change(function () {
         var startValue = $startDate.val();
         var dateObject = new startAndEndTimeValidator(startValue, "");
-        dateObject.startTimeValidator();
+        dateObject.startTimeValidator();  
     });
+
+ 
+  
     $endDate.change(function () {
         var endValue = $endDate.val();
         var startValue = $startDate.val();

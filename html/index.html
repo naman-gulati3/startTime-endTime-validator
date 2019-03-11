@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Start and End Time</title>
-        <link rel="stylesheet" href="../js/Bootstrap/bootstrap.min.css">
-    </head>
-    <body>
-        <form>
-            Start Time : <input id="startDate" data-provide="datepicker" autocomplete="off" format="dd/mm/yyyy" onchange="startAndEndTimeValidator()"> 
-            End Time : <input id="endDate" data-provide="datepicker" autocomplete="off" format="dd/mm/yyyy" onchange="startAndEndTimeValidator()">
+
+<head>
+    <title> Start and End Time</title>
+    <script src="../lib/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <script src="../lib/bootstrap-datepicker.js"></script>
+
+</head>
+
+<body>
+    <form>
+        Start Time : <div class="input-group date" data-provide="datepicker" style="width:200px">
+            <input type="text" class="form-control" id="startDate" autocomplete="off">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div>
+        End Time : <div class="input-group date" data-provide="datepicker" style="width:200px">
+            <input type="text" class="form-control" id="endDate" autocomplete="off">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div>
         </form>
-        <script src="../js/jQuery/jquery-3.3.1.min.js"></script>
-        <script src="../js/Bootstrap/bootstrap-datepicker.min.js"></script>
-        <script src="../js/validator.js"></script>
-    </body>
+    <script src="../js/validator.js"></script>
+</body>
+
 </html>
